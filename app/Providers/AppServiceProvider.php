@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Schema;
@@ -15,7 +16,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if(env('FORCE_HTTPS')) {
+        // if(env('FORCE_HTTPS')) {
+        //     $this->app['request']->server->set('HTTPS', true);
+        // }
+        if (App::environment('production')) {
             $this->app['request']->server->set('HTTPS', true);
         }
     }
