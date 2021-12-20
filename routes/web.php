@@ -25,16 +25,16 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/home', [DashboardController::class, 'index'])->name('home');
 
-    Route::prefix('user')->as('user.')->group(function () {
+    Route::prefix('user')->as('user.')->middleware('roles')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('index');
         Route::get('create', [UserController::class, 'create'])->name('create');
         Route::post('store', [UserController::class, 'store'])->name('store');
         Route::get('edit/{user}', [UserController::class, 'edit'])->name('edit');
         Route::post('update/{user}', [UserController::class, 'update'])->name('update');
         Route::delete('delete/{user}', [UserController::class, 'destroy'])->name('delete');
-
-        Route::get('profile', [UserController::class, 'profile'])->name('profile');
     });
+
+    Route::get('profile', [UserController::class, 'profile'])->name('profile');
 
     Route::resource('incoming-mail', IncomingMailController::class);
     Route::prefix('incoming-mail')->as('incoming-mail.')->group(function () {

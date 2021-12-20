@@ -1,6 +1,6 @@
 <header class="main-nav">
     <div class="sidebar-user text-center">
-        <a class="setting-primary" href="{{ route('user.profile') }}"><i data-feather="settings"></i></a>
+        <a class="setting-primary" href="{{ route('profile') }}"><i data-feather="settings"></i></a>
         <img class="img-90 rounded-circle" src="{{ asset('assets/images/dashboard/1.png') }}" alt="Profile Image">
         <h6 class="mt-3 f-14 f-w-600">{{ auth()->user()->name }}</h6>
         <p class="mb-0 font-roboto">{{ auth()->user()->level }}</p>
@@ -20,14 +20,18 @@
                             <i data-feather="home"></i><span>Beranda</span>
                         </a>
                     </li>
-                    <li class="dropdown mb-1">
-                        <a class="nav-link menu-title" href="javascript:void(0)">
-                            <i data-feather="hard-drive"></i><span>Master Data</span>
-                        </a>
-                        <ul class="nav-submenu menu-content">
-                            <li><a href="{{ route('user.index') }}">User</a></li>
-                        </ul>
-                    </li>
+
+                    @if (Auth::user()->level == 'superadmin')
+                        <li class="dropdown mb-1">
+                            <a class="nav-link menu-title" href="javascript:void(0)">
+                                <i data-feather="hard-drive"></i><span>Master Data</span>
+                            </a>
+                            <ul class="nav-submenu menu-content">
+                                <li><a href="{{ route('user.index') }}">User</a></li>
+                            </ul>
+                        </li>
+                    @endif
+
                     <li class="dropdown mb-1">
                         <a class="nav-link menu-title" href="javascript:void(0)">
                             <i data-feather="folder"></i><span>Data Surat</span>
