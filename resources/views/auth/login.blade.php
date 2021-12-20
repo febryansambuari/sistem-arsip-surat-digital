@@ -10,8 +10,8 @@
                 <div class="text-center">
                     <img src="{{ asset('assets/images/sigit-logo.png') }}" alt="Logo" width="200" height="140">
 
-                    <h4 class="mt-3">Login</h4>
-                    <h6>Welcome back! Log in to your account.</h6>
+                    {{-- <h4 class="mt-3">Login</h4> --}}
+                    <h4 class="mt-3 mb-3">Sistem Arsip Surat Digital</h4>
                 </div>
 
                 <div class="form-group">
