@@ -10,8 +10,8 @@
     <meta name="keywords"
         content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="{{ asset('assets/images/sigit-logo.png') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('assets/images/sigit-logo.png') }}" type="image/x-icon">
+    <link rel="icon" href="/assets/images/sigit-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/sigit-logo.png" type="image/x-icon">
     <title>Sistem Arsip Surat Digital</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,24 +25,24 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
         rel="stylesheet">
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" href="{{ asset('assets/css/icofont.css') }}">
+    <link rel="stylesheet" href="/assets/css/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" href="{{ asset('assets/css/themify.css') }}">
+    <link rel="stylesheet" href="/assets/css/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" href="{{ asset('assets/css/flag-icon.css') }}">
+    <link rel="stylesheet" href="/assets/css/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" href="{{ asset('assets/css/feather-icon.css') }}">
+    <link rel="stylesheet" href="/assets/css/feather-icon.css">
     <!-- Plugins css start-->
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!-- App css-->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="{{ asset('assets/css/color-2.css') }}" id="color" media="screen">
+    <link rel="stylesheet" href="/assets/css/color-2.css" id="color" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 
 <body>
@@ -61,21 +61,21 @@
     </section>
     <!-- page-wrapper end-->
     <!-- latest jquery-->
-    <script src="{{ asset('assets/js/jquery-3.5.1.min.js') }}"></script>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <!-- feather icon js-->
-    <script src="{{ asset('assets/js/icons/feather-icon/feather.min.js') }}"></script>
-    <script src="{{ asset('assets/js/icons/feather-icon/feather-icon.js') }}"></script>
+    <script src="/assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="/assets/js/icons/feather-icon/feather-icon.js"></script>
     <!-- Sidebar jquery-->
-    <script src="{{ asset('assets/js/sidebar-menu.js') }}"></script>
-    <script src="{{ asset('assets/js/config.js') }}"></script>
+    <script src="/assets/js/sidebar-menu.js"></script>
+    <script src="/assets/js/config.js"></script>
     <!-- Bootstrap js-->
-    <script src="{{ asset('assets/js/bootstrap/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="/assets/js/bootstrap/popper.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Plugins JS start-->
-    <script src="{{ asset('assets/js/form-validation-custom.js') }}"></script>
+    <script src="/assets/js/form-validation-custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="/assets/js/script.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
 </body>
