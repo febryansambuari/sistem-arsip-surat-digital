@@ -14,7 +14,7 @@
                             <input class="form-control" type="text" required="" placeholder="Fist Name">
                         </div>
                         <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
-                            <input class="form-control" type="email" required="" placeholder="Last Name">
+                            <input class="form-control" type="text" required="" placeholder="Last Name">
                         </div>
                     </div>
                 </div>
