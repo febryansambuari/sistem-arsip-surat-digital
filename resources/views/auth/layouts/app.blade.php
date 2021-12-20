@@ -39,7 +39,7 @@
     <!-- Bootstrap css-->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
     <!-- App css-->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="{{ asset('assets/css/color-2.css') }}" id="color" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
