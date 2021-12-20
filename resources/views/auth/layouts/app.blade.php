@@ -10,8 +10,8 @@
     <meta name="keywords"
         content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="/assets/images/sigit-logo.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/images/sigit-logo.png" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/images/sigit-logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/sigit-logo.png') }}" type="image/x-icon">
     <title>Sistem Arsip Surat Digital</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
