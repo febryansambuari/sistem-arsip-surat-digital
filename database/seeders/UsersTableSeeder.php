@@ -18,11 +18,13 @@ class UsersTableSeeder extends Seeder
         User::truncate();
 
         DB::table('users')->insert([
-            'name' => 'Administrator',
-            'email' => 'admin@sigit.co.id',
-            'password' => bcrypt('secret'),
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
+            'name'          => 'Administrator',
+            'email'         => 'admin@sigit.co.id',
+            'password'      => bcrypt('secret'),
+            'level'         => 'superadmin',
+            'status'        => true,
+            'created_at'    => date('Y-m-d H:i:s'),
+            'updated_at'    => date('Y-m-d H:i:s'),
         ]);
     }
 }

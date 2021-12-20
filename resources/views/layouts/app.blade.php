@@ -10,7 +10,7 @@
     <meta name="author" content="Sistem Arsip Surat Digital Author">
     <link rel="icon" href="{{ asset('assets/images/sigit-logo.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('assets/images/sigit-logo.png') }}" type="image/x-icon">
-    <title>Sigit Tomang</title>
+    <title>Sistem Arsip Surat Digital</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
