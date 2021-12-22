@@ -7,6 +7,12 @@
             <form method="POST" action="{{ route('login') }}" class="theme-form login-form needs-validation" novalidate="">
                 @csrf
 
+                @if (session('status'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
                 <div class="text-center">
                     <img src="{{ asset('assets/images/sigit-logo.png') }}" alt="Logo" width="200" height="140">
 
@@ -43,7 +49,8 @@
                     <div class="checkbox">
                         <input id="checkbox1" type="checkbox">
                         <label for="checkbox1">Remember password</label>
-                    </div><a class="link" href="forget-password.html">Forgot password?</a>
+                    </div>
+                    <a class="link" href="{{ route('password.request') }}">Lupa Password?</a>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary btn-block" type="submit">Sign in</button>
