@@ -41,8 +41,6 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             ])->save();
 
             return redirect()->back()->with('updateProfileMessage', 'Profile updated successfully');
-
-            // session(['updateProfileMessage' => 'Profile updated successfully']);
         }
     }
 

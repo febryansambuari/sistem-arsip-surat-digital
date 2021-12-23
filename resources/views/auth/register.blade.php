@@ -20,7 +20,7 @@
                 @endif
 
                 <div class="form-group">
-                    <label>Nama</label>
+                    <label>Nama Lengkap</label>
                     <div class="small-group">
                         <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
                             <input class="form-control" type="text" name="first_name" required="" placeholder="Fist Name">
@@ -28,6 +28,12 @@
                         <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
                             <input class="form-control" type="text" name="last_name" required="" placeholder="Last Name">
                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Nama Pengguna</label>
+                    <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                        <input class="form-control" type="text" name="username" required="" placeholder="Masukkan Nama Pengguna">
                     </div>
                 </div>
                 <div class="form-group">
