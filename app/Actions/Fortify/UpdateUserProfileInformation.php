@@ -40,9 +40,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 'email' => $input['email'],
             ])->save();
 
-            return redirect()->back()->with('updateProfileMessage', 'Profile updated successfully');
-
-            // session(['updateProfileMessage' => 'Profile updated successfully']);
+            return redirect()->back()->with('updateProfileMessage', 'Update Profil Sukses');
         }
     }
 

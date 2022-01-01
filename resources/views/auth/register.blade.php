@@ -7,8 +7,8 @@
             <form class="theme-form login-form" action="{{ route('register') }}" method="POST">
                 @csrf
 
-                <h4>Create your account</h4>
-                <h6>Enter your personal details to create account</h6>
+                <h4>Buat Akun Baru</h4>
+                <h6>Masukkan Data Personalmu untuk membuat akun baru</h6>
 
                 @if ($errors->any())
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -20,7 +20,7 @@
                 @endif
 
                 <div class="form-group">
-                    <label>Your Name</label>
+                    <label>Nama Lengkap</label>
                     <div class="small-group">
                         <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
                             <input class="form-control" type="text" name="first_name" required="" placeholder="Fist Name">
@@ -31,27 +31,35 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
+                    <label>Nama Pengguna</label>
+                    <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                        <input class="form-control" type="text" name="username" required="" placeholder="Masukkan Nama Pengguna">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Alamat Email</label>
                     <div class="input-group"><span class="input-group-text"><i class="icon-email"></i></span>
                         <input class="form-control" type="email" name="email" required="" placeholder="Test@gmail.com">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
+                    <label>Kata Sandi</label>
                     <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
                         <input class="form-control" type="password" name="password" required="" placeholder="*********">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Confirm Password</label>
+                    <label>Ketik Ulang Kata Sandi</label>
                     <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
                         <input class="form-control" type="password" name="password_confirmation" required="" placeholder="*********">
                     </div>
                 </div>
-                <div class="form-group justify-content-center">
-                    <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+                <div class="form-group">
+                    <div class="row">
+                        <button class="btn btn-primary btn-block" type="submit">Buat Akun</button>
+                    </div>
                 </div>
-                <p>Already have an account?<a class="ms-2" href="{{ route('login') }}">Sign in</a></p>
+                <p>Sudah punya akun ?<a class="ms-2" href="{{ route('login') }}">Masuk Disini</a></p>
             </form>
         </div>
     </div>

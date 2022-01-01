@@ -33,11 +33,11 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
-        $username = $input['first_name'] . ' ' . $input['last_name'];
+        $full_name = $input['first_name'] . ' ' . $input['last_name'];
 
         return User::create([
-            'name'      => $username,
-            'full_name' => $username,
+            'name'      => $input['username'],
+            'full_name' => $full_name,
             'email'     => $input['email'],
             'password'  => Hash::make($input['password']),
             'level'     => 'admin',

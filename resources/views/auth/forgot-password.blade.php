@@ -23,8 +23,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block" type="submit">Kirim Permintaan</button>
+                            <div class="row">
+                                <button class="btn btn-primary btn-block" type="submit">Kirim Permintaan</button>
+                            </div>
                         </div>
+                        <a href="{{ route('login') }}" class="text-muted">Batal</a>
                     </form>
                 </div>
             </div>

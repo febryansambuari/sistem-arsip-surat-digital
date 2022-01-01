@@ -22,7 +22,7 @@
                         @csrf
 
                         <button class="btn btn-primary-light" type="submit">
-                            <i data-feather="log-out"></i>Log out
+                            <i data-feather="log-out"></i>Keluar
                         </button>
                     </form>
                 </li>
